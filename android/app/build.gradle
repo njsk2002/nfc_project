@@ -1,0 +1,53 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "kr.co.daram.nfc_project"
+    compileSdkVersion 35 // Flutter의 compileSdkVersion 사용
+    ndkVersion = flutter.ndkVersion // Flutter NDK 버전 사용
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17" // Kotlin JVM 타겟 설정
+    }
+
+
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "kr.co.daram.nfc_project"
+        minSdkVersion 26 // Flutter 기본 설정
+        targetSdkVersion 34 // Flutter 기본 설정
+//        versionCode flutter.versionCode // Flutter 버전 코드
+//        versionName flutter.versionName // Flutter 버전 이름
+        versionCode 1
+        versionName "1.0"
+        // 추가적인 설정
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig signingConfigs.debug // 디버그 서명 설정
+        }
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.10"
+    implementation "androidx.core:core-ktx:1.10.1"
+    // 기타 Flutter 프로젝트에 필요한 종속성 추가
+}
+
+flutter {
+    source = "../.." // Flutter 소스 디렉토리 설정
+}
