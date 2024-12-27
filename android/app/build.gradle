@@ -46,7 +46,11 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.10"
     implementation "androidx.core:core-ktx:1.10.1"
     // 기타 Flutter 프로젝트에 필요한 종속성 추가
+    implementation fileTree(dir: 'libs', include: ['*.jar']) // libs 디렉토리의 모든 .jar 파일 포함
+    //implementation files('libs/NFC200717.jar')
+    implementation 'androidx.appcompat:appcompat:1.6.1' // 최신 버전
 }
+
 
 flutter {
     source = "../.." // Flutter 소스 디렉토리 설정

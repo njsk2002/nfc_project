@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "kr.co.daram" "\0"
-            VALUE "FileDescription", "calendar_schedular" "\0"
+            VALUE "FileDescription", "nfc_project" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "calendar_schedular" "\0"
+            VALUE "InternalName", "nfc_project" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 kr.co.daram. All rights reserved." "\0"
-            VALUE "OriginalFilename", "calendar_schedular.exe" "\0"
-            VALUE "ProductName", "calendar_schedular" "\0"
+            VALUE "OriginalFilename", "nfc_project.exe" "\0"
+            VALUE "ProductName", "nfc_project" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
